@@ -2,7 +2,7 @@
 #include "DLLHandler.h"
 
 // This is the way how DLLHandler works
-IMPORT_LIB(SimpleLib, "Z:/Sandbox/VS_14.0/LibraryHandler/LibraryHandler/SimpleLib.dll",
+IMPORT_LIB(SimpleLib, "SimpleLib.dll",
 	(
 		DECLARE_LIB_CONST_FUNCTION_NO_PARAM (void, Function1);
 		DECLARE_LIB_CONST_FUNCTION_ONE_PARAM (void, Function2, const int, a);
