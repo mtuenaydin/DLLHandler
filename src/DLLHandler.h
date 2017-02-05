@@ -3,7 +3,8 @@
 #pragma once
 #include <assert.h>
 
-#ifndef FLS_GLOABLE
+#ifndef SDH_GLOABLE
+#	define SDH_GLOALE
 #	define SDH_BEGIN	namespace SDH {  /*SDH = Simple DLL Handler*/
 #	define SDH_END		}
 #endif
@@ -23,7 +24,7 @@
 	{													\
 		public:											\
 			name()										\
-				: m_handler {new FLS::DLLHandler(path)}	\
+				: m_handler {new SDH::DLLHandler(path)}	\
 			{}											\
 														\
 			~##name()									\
@@ -41,7 +42,7 @@
 														\
 			DECLARE code;								\
 		private:										\
-			FLS::DLLHandler *m_handler;					\
+			SDH::DLLHandler *m_handler;					\
 	};
 
 SDH_BEGIN
